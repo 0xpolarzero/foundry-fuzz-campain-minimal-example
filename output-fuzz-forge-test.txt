@@ -1,0 +1,146 @@
+🛠️  Parsing foundry config
+🛠️  Compiling tests
+🛠️  Collecting tests
+🛠️  Collecting and validating campaigns for submission
+🛠️  Preparing the seed state
+⚡️ Submitting campaigns
+You can view campaign here: https://fuzzing.diligence.tools/campaigns/cmp_6f02d64b2a454bef858069fd7bfa81cb
+Done 🎉
+
+-------
+
+Initializing configuration context
+Initializing tool name middleware with 0.11.3
+Invoking `forge config` command
+Invoking `forge config` command succeeded. Parsing config ...
+Raw forge config [profile.default]
+src = "src"
+test = "test"
+script = "script"
+out = "out"
+libs = ["lib"]
+remappings = [
+    "forge-std/=lib/forge-std/src/",
+    "ds-test/=lib/forge-std/lib/ds-test/src/",
+]
+auto_detect_remappings = true
+libraries = []
+cache = true
+cache_path = "cache"
+broadcast = "broadcast"
+allow_paths = []
+include_paths = []
+force = false
+evm_version = "paris"
+gas_reports = ["*"]
+gas_reports_ignore = []
+auto_detect_solc = true
+offline = false
+optimizer = true
+optimizer_runs = 200
+verbosity = 0
+ignored_error_codes = [
+    "license",
+    "code-size",
+    "init-code-size",
+]
+deny_warnings = false
+cancun = false
+ffi = false
+sender = "0x1804c8ab1f12e6bbf3894d4083f33e07309d1f38"
+tx_origin = "0x1804c8ab1f12e6bbf3894d4083f33e07309d1f38"
+initial_balance = "0xffffffffffffffffffffffff"
+block_number = 1
+gas_limit = 9223372036854775807
+block_base_fee_per_gas = 0
+block_coinbase = "0x0000000000000000000000000000000000000000"
+block_timestamp = 1
+block_difficulty = 0
+block_prevrandao = "0x0000000000000000000000000000000000000000000000000000000000000000"
+memory_limit = 33554432
+extra_output = []
+extra_output_files = []
+names = false
+sizes = false
+via_ir = false
+no_storage_caching = false
+no_rpc_rate_limit = false
+use_literal_content = false
+bytecode_hash = "ipfs"
+cbor_metadata = true
+sparse_mode = false
+build_info = false
+
+[[profile.default.fs_permissions]]
+access = "read"
+path = "out"
+
+[profile.default.rpc_storage_caching]
+chains = "all"
+endpoints = "all"
+
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing = false
+int_types = "long"
+multiline_func_header = "attributes_first"
+quote_style = "double"
+number_underscore = "preserve"
+single_line_statement_blocks = "preserve"
+override_spacing = false
+wrap_comments = false
+ignore = []
+contract_new_lines = false
+
+[doc]
+out = "docs"
+title = ""
+book = "book.toml"
+homepage = "README.md"
+ignore = []
+
+[fuzz]
+runs = 256
+max_test_rejects = 65536
+dictionary_weight = 40
+include_storage = true
+include_push_bytes = true
+max_fuzz_dictionary_addresses = 15728640
+max_fuzz_dictionary_values = 6553600
+
+[invariant]
+runs = 256
+depth = 15
+fail_on_revert = false
+call_override = false
+dictionary_weight = 80
+include_storage = true
+include_push_bytes = true
+max_fuzz_dictionary_addresses = 15728640
+max_fuzz_dictionary_values = 6553600
+shrink_sequence = true
+
+
+Invoking `forge build` command (["forge", "build", "--build-info", "--force"])
+Invoking `forge build` command succeeded
+Invoking `forge test --list` command to list tests (["forge", "test", "--list", "--json", "--match-path", "test/*"])
+Invoking `forge test --list` command succeeded. Parsing the list ...
+Raw tests list No files changed, compilation skipped
+{"test/fuzz/Invariants.t.sol":{"InvariantsTest":[]}}
+
+Normalizing path "test/fuzz/Invariants.t.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/test/fuzz/Invariants.t.sol"
+Normalizing path "lib/forge-std/lib/ds-test/src/test.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/lib/ds-test/src/test.sol"
+Normalizing path "lib/forge-std/src/StdError.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/src/StdError.sol"
+Normalizing path "lib/forge-std/src/StdJson.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/src/StdJson.sol"
+Normalizing path "lib/forge-std/src/StdMath.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/src/StdMath.sol"
+Normalizing path "lib/forge-std/src/StdStorage.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/src/StdStorage.sol"
+Normalizing path "lib/forge-std/src/StdStorage.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/src/StdStorage.sol"
+Normalizing path "lib/forge-std/src/StdStyle.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/src/StdStyle.sol"
+Normalizing path "lib/forge-std/src/console.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/src/console.sol"
+Normalizing path "lib/forge-std/src/console2.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/src/console2.sol"
+Normalizing path "lib/forge-std/src/safeconsole.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/lib/forge-std/src/safeconsole.sol"
+Normalizing path "script/Counter.s.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/script/Counter.s.sol"
+Normalizing path "src/Counter.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/src/Counter.sol"
+Normalizing path "test/fuzz/Handler.t.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/test/fuzz/Handler.t.sol"
+Normalizing path "test/fuzz/Invariants.t.sol" relative to source_dir. Absolute path "/Users/polarzero/_CODE/foundry-fuzz-campain-minimal-example/test/fuzz/Invariants.t.sol"
